@@ -5,7 +5,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-/*   border: solid 1px red; */
+/*   border: solid 1px red;  */
 }
 
 body {
@@ -22,29 +22,50 @@ body {
   height: 300px;
   width: 500px;
   position: absolute;
-  bottom: 30px;
-  left: 350px;
+  top: 300px;
+  left: 100px;
   z-index:0;
 
 }
 .card{
   position:absolute;
+  overflow:hidden;
   height:250px;
   width:450px;
-  top:-120px;
-  left:20px;
+  top:0px;
+  left:25px;
   background: #35384f;
+  padding: 80px 100px 80px 130px;
+  color:#fff;
+  font-family: 微軟正黑體;
+  border-radius:5%;
   z-index: 1;
   transition: 0.5s;
   animation-name: move;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.card:hover{
-  z-index:5;
-  transform:scale(2.7);
-  -webkit-animation:indexend 0s;
 
+.card hr {
+  border-color: #5270a5;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 25px;
+  line-height: 50px;
+}
+.card span {
+  font-size: 18px;
+}
+.card h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card:hover{
+  -webkit-animation:indexend 0s;
+  transform: translate(0px,-200px);
 }
 
 @keyframes move{
@@ -76,7 +97,23 @@ body {
   bottom: 0px;
   left: 0px;
 }
-
+.c1{
+  position:absolute;
+  background:#fffac4;
+  width:450px;
+  height:30px;
+  top:15px;
+  left:-50px;
+}
+.c2{
+  position:absolute;
+  background:#fffac4;
+  width:450px;
+  height:30px;
+  top:200px;
+  left:300px;
+ 
+}
 .n1 {
   position: absolute;
   top: -50px;
